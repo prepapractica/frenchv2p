@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices de Révision - Français A1/A2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exercices de Révision Interactifs</h1>
+        <p>Préparez votre examen partiel avec autoevaluation immédiate</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="vocabulaire.html">Vocabulaire</a>
+        <a href="grammaire.html">Grammaire</a>
+        <a href="exercices.html" class="active">Exercices de Révision</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="quiz-container" id="exam-quiz">
+            <h2>✍️ Examen Blanc / Pratique Globale</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Répondez aux questions ci-dessous et cliquez sur "Vérifier l'examen" pour voir votre note.</p>
+
+            <!-- Q1: Être / Avoir -->
+            <div class="quiz-question" data-answer="suis">
+                <p>1. Je <input type="text" style="width:120px;"> (être) étudiant au lycée.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <div class="quiz-question" data-answer="avons">
+                <p>2. Nous <input type="text" style="width:120px;"> (avoir) un examen de français aujourd'hui.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <!-- Q2: Aller / Venir -->
+            <div class="quiz-question" data-answer="vais">
+                <p>3. Demain, je <input type="text" style="width:120px;"> (aller) à la bibliothèque.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <div class="quiz-question" data-answer="viennent">
+                <p>4. Mes amis <input type="text" style="width:120px;"> (venir) du Mexique.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <!-- Q3: Faire / Prendre -->
+            <div class="quiz-question" data-answer="fait">
+                <p>5. Il <input type="text" style="width:120px;"> (faire) de la natation le week-end.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <div class="quiz-question" data-answer="prenons">
+                <p>6. Nous <input type="text" style="width:120px;"> (prendre) le bus pour aller à l'école.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <!-- Q4: Adjectifs possessifs -->
+            <div class="quiz-question" data-answer="mon">
+                <p>7. C'est <input type="text" style="width:120px;"> (mi - masculino) sac à dos.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <div class="quiz-question" data-answer="ses">
+                <p>8. Paul aime <input type="text" style="width:120px;"> (sus - plural) amis.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <!-- Q5: Articles -->
+            <div class="quiz-question" data-answer="une">
+                <p>9. J'achète <input type="text" style="width:120px;"> (un / une / des) valise rouge.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <div class="quiz-question" data-answer="l'">
+                <p>10. <input type="text" style="width:120px;"> (Le / La / L') écran de mon ordinateur est grand.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <!-- Q6: Passé Composé -->
+            <div class="quiz-question" data-answer="ai étudié">
+                <p>11. Hier soir, j' <input type="text" style="width:150px;"> (étudier) pour le contrôle de français.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <div class="quiz-question" data-answer="ont parlé">
+                <p>12. Ils <input type="text" style="width:150px;"> (parler) avec le professeur après le cours.</p>
+                <div class="result-feedback"></div>
+            </div>
+
+            <button class="btn" onclick="checkQuiz('exam-quiz')">Vérifier l'examen</button>
+            <h3 id="exam-quiz-score" style="margin-top: 1.5rem; display: none; color: var(--primary-color);"></h3>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Site de révision de Français A1/A2 - Prêt pour GitHub Pages</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
